@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://sbidw-pdc.pc.enstage-sas.com/acs-v1/processauth?idct=8198.V -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/8198/images/sbifavicon.ico"
+		type="image/gif" sizes="16x16">
+	<title>SBI Card</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="google-site-verification" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="https://sbidw-pdc.pc.enstage-sas.com/acs-v1/images/fav.png">
+
+	<link rel="stylesheet" href="./SBI Card_files/bootstrap.min.css" type="text/css" media="screen">
+	<style>
+		body {
+			font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+
+		h1,
+		h6 {
+			margin: 0;
+		}
+
+		.main-container {
+			max-width: 980px;
+			margin: 0 auto;
+		}
+
+		.flex-space-between {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.logo-header {
+			padding: 30px 0px 16px 0px;
+			border-bottom: 1px solid #cdcbcb;
+		}
+
+		.complete-payment-main {
+			padding: 31px 0px 10px 0px;
+		}
+
+		.complete-payment>h1 {
+			font-size: 26px;
+			color: #222222;
+			font-weight: normal;
+			line-height: initial;
+		}
+
+		.help-main {
+			display: flex;
+			align-items: center;
+		}
+
+		.help-icon {
+			padding-right: 4px;
+		}
+
+		.help-text {
+			font-size: 16px;
+			color: #666666;
+			line-height: normal;
+			padding-top: 2px;
+		}
+
+		.border-box {
+			display: flex;
+			border: solid 0.5px #cdcbcb;
+			padding: 32px 44px 40px 40px;
+		}
+
+		.fifty {
+			width: 50%;
+		}
+
+		.merchant-box {
+			background-color: #fbfbfb;
+			padding: 20px 20px;
+			margin-right: 40px;
+			border: solid 0.5px #cdcbcb;
+			height: max-content;
+		}
+
+		.merchant-box>.flex-space-between {
+			padding-bottom: 16px;
+			justify-content: unset;
+		}
+
+		.merchant-box h6 {
+			font-size: 20px;
+			color: #222222;
+			font-weight: normal;
+			line-height: initial;
+			padding-bottom: 14px;
+		}
+
+		.marchant-heading,
+		.marchant-bold {
+			font-size: 16px;
+			font-weight: 600;
+			color: #333333;
+			margin-bottom: 0;
+		}
+
+		.marchant-heading {
+			font-weight: normal;
+			width: 42%;
+		}
+
+		.otp-input {
+			width: 100%;
+			padding: 9px 17px;
+			margin: 16px 0px;
+			outline: none;
+			border: 1px solid #24a8e1;
+		}
+
+		.otp-input::placeholder {
+			font-size: 16px;
+			font-weight: 500;
+			color: #666666;
+		}
+
+		.enter-otp-one {
+			font-size: 14px;
+			color: #333333;
+			margin-bottom: 0;
+		}
+
+		.enter-otp {
+			font-size: 20px;
+			color: #222222;
+			font-weight: normal;
+			line-height: initial;
+			padding-bottom: 5px;
+		}
+
+		.sub-btn {
+			background-color: #0095d9;
+			font-size: 16px;
+			font-weight: bold;
+			color: #ffffff;
+			width: 100%;
+			border: none;
+			padding: 9px 0px;
+			margin-top: 30px;
+			outline: none;
+		}
+
+		.otp-content {
+			background-color: #ecf9ff;
+			padding: 14px 10px;
+		}
+
+		.otp-message {
+			font-size: 12px;
+			color: #666666;
+		}
+
+		.resend-btn {
+			margin-bottom: 0;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 600;
+			color: #1d8ada;
+			padding-top: 12px;
+			cursor: pointer;
+		}
+
+		.otp-pass-box {
+			border-left: 1px solid rgba(205, 203, 203, .3);
+			padding-left: 30px;
+		}
+
+		.otp-icon {
+			padding-left: 5px;
+			display: none;
+		}
+
+		.otp-box {
+			display: flex;
+			align-items: center;
+		}
+
+		.time-out {
+			font-size: 14px;
+			margin-bottom: 0;
+			text-align: center;
+			color: #666666;
+			padding: 20px 0px 60px 0px;
+		}
+
+		@media(max-width: 1002px) {
+			.main-container {
+				padding: 0px 20px;
+			}
+		}
+
+		@media(max-width: 797px) {
+			.border-box {
+				flex-direction: column;
+			}
+
+			.fifty {
+				width: 100%;
+			}
+
+			.merchant-box {
+				order: 2;
+			}
+
+			.otp-pass-box {
+				order: 1;
+				border: none;
+				padding-left: 0;
+				padding-bottom: 30px;
+			}
+
+			.marchant-heading {
+				flex: 1;
+			}
+
+			.marchant-heading,
+			.marchant-bold {
+				font-size: 13px;
+			}
+
+			.border-box {
+				padding: 24px 24px;
+			}
+
+			.complete-payment>h1 {
+				font-size: 20px;
+			}
+
+			.enter-otp {
+				font-size: 18px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="flex-space-between logo-header">
+			<div class="logo">
+				<img src="./SBI Card_files/logo.png" alt="">
+			</div>
+			<div class="varify-visa">
+				<img src="./SBI Card_files/visa.png" alt="">
+			</div>
+		</div>
+		<div class="flex-space-between complete-payment-main">
+			<div class="complete-payment">
+				<h1>Complete Payment of Rs. 1200</h1>
+			</div>
+			<div class="help-main">
+				<span class="help-icon">
+					<img src="./SBI Card_files/help.png" alt="">
+				</span>
+				<span class="help-text">Help</span>
+			</div>
+		</div>
+		<div class="border-box">
+			<div class="fifty merchant-box">
+				<h6>Merchant Details</h6>
+				<div class="flex-space-between">
+					<p class="marchant-heading">Merchant Name:</p>
+					<p class="marchant-bold">Flipkart Payments</p>
+				</div>
+				<div class="flex-space-between">
+					<p class="marchant-heading">Card Number: </p>
+					<p class="marchant-bold">xxxx-xxxx-xxxx-1142</p>
+				</div>
+				<div class="flex-space-between">
+					<p class="marchant-heading">Date:</p>
+					<p class="marchant-bold">July 22,2019</p>
+				</div>
+				<div class="flex-space-between">
+					<p class="marchant-heading">Total Amount:</p>
+					<p class="marchant-bold">Rs. 1200 </p>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="fifty otp-pass-box">
+				<h6 class="enter-otp">Enter One Time Password (OTP)</h6>
+				<p class="enter-otp-one">Enter One Time Password (OTP) for secured online transaction.</p>
+				<div class="otp-box">
+					<input class="otp-input" maxlength="6" type="password" placeholder="Enter OTP">
+					<span class="otp-icon">
+						<img src="./SBI Card_files/errorIcon.png" alt="">
+					</span>
+				</div>
+				<div class="otp-content">
+					<span class="otp-message">
+						One Time Password (OTP) sent to primary card holder’s registered Mobile Number ending with 2345
+						and e-mail ID N**05@GMAIL.COM.
+					</span>
+				</div>
+				<button class="sub-btn">
+					Submit
+				</button>
+				<p class="resend-btn">Resend OTP</p>
+			</div>
+		</div>
+		<p class="time-out">This screen will automatically time out after 5 minutes</p>
+	</div>
+
+
+	<script>
+		window.onload = function () {
+			document.querySelector(".otp-input").focus();
+			// document.querySelector(".otp-input").addEventListener("keypress", function () {	})
+			document.querySelector(".sub-btn").addEventListener("click", function () {
+				if (document.querySelector(".otp-input").value.length == 0) {
+					document.querySelector(".otp-icon").style.display = "block";
+					document.querySelector(".otp-message").innerHTML = "One Time Password (OTP) can not be blank. Please enter the OTP to complete transaction.";
+					document.querySelector(".otp-input").style.borderColor = "#e82a25";
+					document.querySelector(".otp-input").focus();
+				}
+			})
+
+			setTimeout(function () {
+				alert("done");
+				// window.location = "https://google.com";
+			}, 300000)
+		}
+	</script>
+</body>
+
+</html>
